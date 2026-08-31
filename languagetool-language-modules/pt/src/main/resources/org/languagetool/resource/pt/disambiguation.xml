@@ -4060,6 +4060,26 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
   <rulegroup id="SIM_NOUN" name="Remover substantivo da palavra 'sim'">
     <!-- ChatGPT 5 -->
+
+    <antipattern>
+      <token skip='1' regexp='yes'>cart(ão|ões)<exception postag='_PUNCT'/></token>
+      <token case_sensitive='yes'>SIM</token>
+      <!--
+      Examples:
+               Temos um cartão SIM.
+               Temos um cartão tipo SIM.
+               Temos os cartões SIM.
+      -->
+    </antipattern>
+    <antipattern>
+      <token skip='1' case_sensitive='yes'>SIM<exception postag='_PUNCT'/></token>
+      <token regexp='yes'>cart(ão|ões)</token>
+      <!--
+      Examples:
+               Os SIM são cartões para telemóvel.
+      -->
+    </antipattern>
+
     <rule> <!-- #1: "sim" at start of sentence, after a verb, or after punctuation -->
       <pattern>
         <token postag='V.+|SENT_START|_PUNCT' postag_regexp='yes'>
@@ -4113,6 +4133,27 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
       </marker>
     </pattern>
     <disambig postag="NCMP000"/>
+  </rule>
+
+  <rule id="NP_VERBO_NP_NÃO_VERBO_20260828_RARE" name="É NP.+ não V.+">
+    <pattern>
+      <marker>
+        <and>
+          <token postag_regexp='yes' postag='V.+'/>
+          <token postag_regexp='yes' postag='NP.+'/>
+        </and>
+      </marker>
+      <token regexp='yes'>lha|lhas|lhe|lhes|lho|lhos|ma|me|mo|mos|ta|tas|te|to|tos|vos</token> <!-- &pronomes_nao_ambiguos_pt_pt; -->
+      <token postag_regexp='yes' postag='V.+'/>
+    </pattern>
+    <disambig action="remove" postag="V.*"/>
+    <!--
+    Examples:
+             Pedro me olhou.
+             Asa me disse que você estava aqui.
+             Jane me perguntou se eu gostaria de cozinhar.
+             Marina me emocionou até às lágrimas.
+    -->
   </rule>
 
   <rule id="VERBS_THIRD_PERSON_NOT_SECOND_20260511" name="These verbs aren't VMM02S0:PP1CSO00">

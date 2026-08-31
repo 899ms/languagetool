@@ -36,6 +36,7 @@ Beauharnais
 Behçet
 Binibèquer
 Bonaigua
+Boríssov
 Breton
 Brunetti
 Bucèfal
@@ -195,6 +196,9 @@ SIAD
 SISCAT
 SOIB
 SQL
+Salambó
+Salambô
+Salammbô
 Sally
 Sedeta
 Shin-chan
@@ -243,6 +247,10 @@ acretiva
 acretives
 adiabaticitat
 adiabaticitats
+afrocaribeny
+afrocaribenya
+afrocaribenyes
+afrocaribenys
 afterhours
 aftershave
 aftershaves
@@ -310,6 +318,8 @@ antixinesos
 antixinès
 antixinés
 anularitat
+aquanauta
+aquanautes
 artistoide
 artistoides
 audiocasset
@@ -382,6 +392,10 @@ autoavaluïn
 autoavaluïs
 autocanibalitzacions
 autocanibalització
+autocatalític
+autocatalítica
+autocatalítics
+autocatalítiques
 autocorregeix
 autocorregeixen
 autocorregeixes
@@ -1060,6 +1074,10 @@ descatastrofitzésseu
 descatastrofitzéssim
 descatastrofitzéssiu
 descatastrofitzí
+descoordinada
+descoordinades
+descoordinat
+descoordinats
 desdolaritz
 desdolaritza
 desdolaritzacions
@@ -1608,6 +1626,7 @@ gal·lesoparlant
 gal·lesoparlants
 gentassa
 gentasses
+geociències
 giga
 giga-electró-volt
 giga-electró-volts
@@ -1638,6 +1657,10 @@ hannoverians
 hannoverià
 heptadecàgon
 heptadecàgons
+heterofermentatiu
+heterofermentatius
+heterofermentativa
+heterofermentatives
 heteromasclisme
 heteromasclismes
 heteromasclista
@@ -2054,6 +2077,10 @@ historitzésseu
 historitzéssim
 historitzéssiu
 historitzí
+homofermentatiu
+homofermentatius
+homofermentativa
+homofermentatives
 hordeïna
 hordeïnes
 huit
@@ -2898,6 +2925,10 @@ polsos
 portacistells
 post
 post-Trump
+post-iugoslau
+post-iugoslaus
+post-iugoslava
+post-iugoslaves
 postalfabètic
 postalfabètica
 postalfabètics
@@ -3750,6 +3781,10 @@ turboglobalitzacions
 turboglobalització
 turcoparlant
 turcoparlants
+turistificador
+turistificadora
+turistificadores
+turistificadors
 tàser
 tàsers
 u
@@ -3811,6 +3846,8 @@ videocàpsula
 videocàpsules
 vinot
 vinots
+virtuosista
+virtuosistes
 vis
 visos
 voyeurista

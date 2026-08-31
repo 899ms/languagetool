@@ -182,10 +182,10 @@
 
         <io.prometheus.simpleclient.version>0.16.0</io.prometheus.simpleclient.version>
         <io.github.resilience4j.version>1.7.1</io.github.resilience4j.version>
-        <io.micrometer.micrometer-prometheus.version>1.7.12</io.micrometer.micrometer-prometheus.version>
-        <io.opentelemetry.version>1.42.1</io.opentelemetry.version>
-        <io.opentelemetry.semconv.version>1.30.1-alpha</io.opentelemetry.semconv.version>
-        <io.lettuce.version>7.5.2.RELEASE</io.lettuce.version>
+        <io.micrometer.micrometer-prometheus.version>1.17.1</io.micrometer.micrometer-prometheus.version>
+        <io.opentelemetry.version>1.65.0</io.opentelemetry.version>
+        <io.opentelemetry.semconv.version>1.43.0</io.opentelemetry.semconv.version>
+        <io.lettuce.version>7.7.0.RELEASE</io.lettuce.version>
 
         <javax.activation.javax.activation-api.version>1.2.0</javax.activation.javax.activation-api.version>
         <javax.annotation.javax.annotation-api.version>1.3.2</javax.annotation.javax.annotation-api.version>
@@ -200,7 +200,7 @@
         <org.apache.commons.commons-pool2.version>2.12.0</org.apache.commons.commons-pool2.version>
         <org.apache.commons.lang3.version>3.18.0</org.apache.commons.lang3.version>
         <org.apache.commons.text.version>1.12.0</org.apache.commons.text.version>
-        <org.apache.opennlp.opennlp-tools.version>1.9.4</org.apache.opennlp.opennlp-tools.version>
+        <org.apache.opennlp.opennlp-tools.version>1.9.5</org.apache.opennlp.opennlp-tools.version>
 
         <org.glassfish.jaxb.jaxb-runtime.version>4.0.5</org.glassfish.jaxb.jaxb-runtime.version>
         <org.ioperm.morphology-el.version>1.0.0</org.ioperm.morphology-el.version>
@@ -528,7 +528,7 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>io.opentelemetry</groupId>
+                <groupId>io.opentelemetry.semconv</groupId>
                 <artifactId>opentelemetry-semconv</artifactId>
                 <version>${io.opentelemetry.semconv.version}</version>
             </dependency>
@@ -1384,7 +1384,7 @@
                     <suppressionFiles>
                         <suppressionFile>owasp_fp.xml</suppressionFile>
                     </suppressionFiles>
-                    <ossindexAnalyzerEnabled>false</ossindexAnalyzerEnabled>
+                    <ossIndexAnalyzerEnabled>false</ossIndexAnalyzerEnabled>
                 </configuration>
             </plugin>
             <plugin>

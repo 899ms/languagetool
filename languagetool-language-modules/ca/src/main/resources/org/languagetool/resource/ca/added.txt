@@ -40,6 +40,7 @@ Beauharnais	Beauharnais	NPCNSP0
 Behçet	Behçet	NPCNSP0
 Binibèquer	Binibèquer	NPCSG00
 Bonaigua	Bonaigua	NPFSG00
+Boríssov	Boríssov	NPCSG00
 Breton	Breton	NPCNSP0
 Brunetti	Brunetti	NPCNSP0
 Bucèfal	Bucèfal	NPMSSP0
@@ -200,6 +201,9 @@ SIAD	SIAD	NPMNO00
 SISCAT	SISCAT	NPMSO00
 SOIB	SOIB	NPMSO00
 SQL	SQL	NCCN000
+Salambó	Salambó	NPFSSP0
+Salambô	Salambô	NPCSG00
+Salammbô	Salammbô	NPFSSP0
 Sally	Sally	NPFSSP0
 Sedeta	Sedeta	NPFSG00
 Shin-chan	Shin-chan	NPMSO00
@@ -248,6 +252,10 @@ acretiva	acretiu	AQ0FS0
 acretives	acretiu	AQ0FP0
 adiabaticitat	adiabaticitat	NCFS000
 adiabaticitats	adiabaticitat	NCFP000
+afrocaribeny	afrocaribeny	AQ0MS0
+afrocaribenya	afrocaribeny	AQ0FS0
+afrocaribenyes	afrocaribeny	AQ0FP0
+afrocaribenys	afrocaribeny	AQ0MP0
 afterhours	afterhours	NCMN000
 aftershave	aftershave	NCMS000
 aftershaves	aftershave	NCMP000
@@ -324,6 +332,8 @@ antixinesos	antixinès	AQ0MP0
 antixinès	antixinès	AQ0MS0
 antixinés	antixinès	AQ0MS0
 anularitat	anularitat	NCFS000
+aquanauta	aquanauta	NCCS000
+aquanautes	aquanauta	NCCP000
 artistoide	artistoide	AQ0CS0
 artistoides	artistoide	AQ0CP0
 audiocasset	audiocasset	NCCS000
@@ -420,6 +430,10 @@ autoavaluïn	autoavaluar	VMSP3P0Y
 autoavaluïs	autoavaluar	VMSP2S0Y
 autocanibalitzacions	autocanibalització	NCFP000
 autocanibalització	autocanibalització	NCFS000
+autocatalític	autocatalític	AQ0MS0
+autocatalítica	autocatalític	AQ0FS0
+autocatalítics	autocatalític	AQ0MP0
+autocatalítiques	autocatalític	AQ0FP0
 autocorregeix	autocorregir	VMIP3S00
 autocorregeix	autocorregir	VMM02S00
 autocorregeixen	autocorregir	VMIP3P00
@@ -1322,6 +1336,10 @@ descatastrofitzésseu	descatastrofitzar	VMSI2P05
 descatastrofitzéssim	descatastrofitzar	VMSI1P02
 descatastrofitzéssiu	descatastrofitzar	VMSI2P02
 descatastrofitzí	descatastrofitzar	VMIS1S00
+descoordinada	descoordinat	AQ0FS0
+descoordinades	descoordinat	AQ0FP0
+descoordinat	descoordinat	AQ0MS0
+descoordinats	descoordinat	AQ0MP0
 desdolaritz	desdolaritzar	VMIP1S0B
 desdolaritza	desdolaritzar	VMIP3S00
 desdolaritza	desdolaritzar	VMM02S00
@@ -2023,6 +2041,7 @@ gal·lesoparlant	gal·lesoparlant	AQ0CS0
 gal·lesoparlants	gal·lesoparlant	AQ0CP0
 gentassa	gentassa	NCFS000
 gentasses	gentassa	NCFP000
+geociències	geociències	NCFP000
 giga	giga_2	NCMS000
 giga-electró-volt	giga-electró-volt	NCMS000
 giga-electró-volts	giga-electró-volt	NCMP000
@@ -2055,6 +2074,10 @@ hannoverians	hannoverià	AQ0MP0
 hannoverià	hannoverià	AQ0MS0
 heptadecàgon	heptadecàgon	NCMS000
 heptadecàgons	heptadecàgon	NCMP000
+heterofermentatiu	heterofermentatiu	AQ0MS0
+heterofermentatius	heterofermentatiu	AQ0MP0
+heterofermentativa	heterofermentatiu	AQ0FS0
+heterofermentatives	heterofermentatiu	AQ0FP0
 heteromasclisme	heteromasclisme	NCMS000
 heteromasclismes	heteromasclisme	NCMP000
 heteromasclista	heteromasclista	AQ0CS0
@@ -2617,6 +2640,10 @@ historitzésseu	historitzar	VMSI2P05
 historitzéssim	historitzar	VMSI1P02
 historitzéssiu	historitzar	VMSI2P02
 historitzí	historitzar	VMIS1S00
+homofermentatiu	homofermentatiu	AQ0MS0
+homofermentatius	homofermentatiu	AQ0MP0
+homofermentativa	homofermentatiu	AQ0FS0
+homofermentatives	homofermentatiu	AQ0FP0
 hordeïna	hordeïna	NCFS000
 hordeïnes	hordeïna	NCFP000
 huit	huit_1	NCMS000
@@ -3706,6 +3733,10 @@ portacistells	portacistells	NCMN000
 post	post_1	NCMS000
 post	post_2	NCFS000
 post-Trump	post-Trump	AQ0CN0
+post-iugoslau	post-iugoslau	AQ0MS0
+post-iugoslaus	post-iugoslau	AQ0MP0
+post-iugoslava	post-iugoslau	AQ0FS0
+post-iugoslaves	post-iugoslau	AQ0FP0
 postalfabètic	postalfabètic	AQ0MS0
 postalfabètica	postalfabètic	AQ0FS0
 postalfabètics	postalfabètic	AQ0MP0
@@ -4796,6 +4827,10 @@ turboglobalitzacions	turboglobalització	NCFP000
 turboglobalització	turboglobalització	NCFS000
 turcoparlant	turcoparlant	AQ0CS0
 turcoparlants	turcoparlant	AQ0CP0
+turistificador	turistificador	AQ0MS0
+turistificadora	turistificador	AQ0FS0
+turistificadores	turistificador	AQ0FP0
+turistificadors	turistificador	AQ0MP0
 tàser	tàser	NCFS000
 tàsers	tàser	NCFP000
 u	u_1	NCFS000
@@ -4862,6 +4897,8 @@ videocàpsula	videocàpsula	NCFS000
 videocàpsules	videocàpsula	NCFP000
 vinot	vinot	NCMS000
 vinots	vinot	NCMP000
+virtuosista	virtuosista	AQ0CS0
+virtuosistes	virtuosista	AQ0CP0
 vis	vis_1	NCMS000
 vis	vis_2	NCFN000
 visos	vis_1	NCMP000

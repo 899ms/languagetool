@@ -10865,9 +10865,9 @@ Copyright (C) 2012 Jaume Ortolà i Font
     <rule id="adjectiu_inusual" name="inusual com a adjectiu davant de nom">
         <pattern>
             <marker>
-                <token postag="N.*" postag_regexp="yes" regexp="yes" inflected="yes">estanc|semiconductor</token>
+                <token postag="N.*" postag_regexp="yes" regexp="yes" inflected="yes">&adjectiu_inusual_davant_nom;</token>
             </marker>
-            <token postag="N.*" postag_regexp="yes"/>
+            <token postag="N.*" postag_regexp="yes"><exception postag="[NA].*" postag_regexp="yes" negate_pos="yes"/></token>
         </pattern>
         <disambig action="remove" postag="A.*"/>
     </rule>
@@ -19144,6 +19144,15 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </pattern>
         <disambig action="filter" postag="A.*"/>
     </rule>
+    <rule id="polemica_nom" name="polèmica no adjectius davant d'adjectiu">
+        <pattern>
+            <marker>
+                <token postag="N.*" postag_regexp="yes" inflected="yes">polèmica<exception postag="_GN_.*" postag_regexp="yes"/></token>
+            </marker>
+            <token postag="AQ.*|V.P.*|NPCN000" postag_regexp="yes"/>
+        </pattern>
+        <disambig action="filter" postag="[^AV].*"/>
+    </rule>
     <rule id="en_article" name="En article">
         <pattern>
             <unify>
@@ -22942,7 +22951,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </rule>
         <rule>
             <pattern case_sensitive="yes">
-                <token regexp="yes">Torres|Humbert|Bora</token>
+                <token regexp="yes">Torres|Humbert|Bora|Pons</token>
                 <marker>
                     <token><match no="0"/></token>
                 </marker>
