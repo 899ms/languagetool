@@ -255,6 +255,10 @@ fartinho	fartinho	AQ0MS0
 fartinhos	fartinho	AQ0MP0
 fingerprint	fingerprint	NCFS000
 fingerprints	fingerprint	NCFP000
+fotorrealista	fotorrealista	AQ0CS0
+fotorrealista	fotorrealista	NCCS000
+fotorrealistas	fotorrealista	AQ0CP0
+fotorrealistas	fotorrealista	NCCP000
 googlar	googlar	VMN0000
 googlar	googlar	VMN01S0
 googlar	googlar	VMN03S0
@@ -269,6 +273,8 @@ Josefino	Josefino	NPMS000
 Jumarie	Jumarie	NPMS000
 Lemmy	Lemmy	NPMS000
 Lennon	Lennon	NPMSS00
+lacração	lacração	NCFS000
+lacrações	lacração	NCFP000
 limpezazinha	limpezazinha	NCFS000
 limpezazinhas	limpezazinha	NCFP000
 mecanorrecetor	mecanorrecetor	NCMS000
@@ -296,6 +302,7 @@ primeira-ministra	primeiro-ministro	NCFS000
 primeiras-ministras	primeiro-ministro	NCFP000
 primeiro-ministro	primeiro-ministro	NCMS000
 primeiros-ministros	primeiro-ministro	NCMP000
+PureBasic	PureBasic	NPMS000
 recalculação	recalculação	NCFS000
 rinossinusite	rinossinusite	NCFS000
 rinossinusites	rinossinusite	NCFP000
@@ -320,6 +327,7 @@ sistémicos	sistémico	AQ0MP0
 sistêmicos	sistêmico	AQ0MP0
 smoothie	smoothie	NCMS000
 smoothies	smoothie	NCMP000
+SNS24	SNS24	NPMS000
 sossegadinha	sossegadinho	NCFS00D
 sossegadinhas	sossegadinho	NCFP00D
 sossegadinho	sossegadinho	NCMS00D

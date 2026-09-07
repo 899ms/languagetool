@@ -479,6 +479,9 @@ filhotas
 fingerprint
 fingerprints
 Forms
+fotorrealismo
+fotorrealista
+fotorrealistas
 franguinha
 franguinhas
 franguinho
@@ -512,6 +515,8 @@ hitleriano
 hitlerianos
 HMB-45
 holter
+hostilização
+hostilizações
 Impress
 inseríveis
 inserível
@@ -524,6 +529,8 @@ josefino
 josefinos
 Jumarie
 Kotlin
+lacração
+lacrações
 lapalissada
 lapalissadas
 lascarim
@@ -664,6 +671,7 @@ sinoviais
 sinovial
 smoothie
 smoothies
+SNS24
 sociopatia
 sociopatias
 solteirice

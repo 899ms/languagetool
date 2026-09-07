@@ -24708,6 +24708,19 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <token inflected="yes">posar</token>
                 <token>solar</token>
             </antipattern>
+            <antipattern>
+                <token>vinga</token>
+                <token postag="V.N.*" postag_regexp="yes"/>
+            </antipattern>
+            <antipattern>
+                <token inflected="yes">venir</token>
+                <token postag="RG|LOC_ADV" max="3" postag_regexp="yes"/>
+                <token postag="V.N.*" postag_regexp="yes"/>
+            </antipattern>
+            <antipattern>
+                <token inflected="yes">vendre</token>
+                <token>menjar</token>
+            </antipattern>
             <rule>
                 <pattern>
                     <marker>
@@ -24728,11 +24741,15 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example correction="obligat a">L'ha <marker>obligat</marker> llegir les normes.</example>
                 <example correction="Tornava a"><marker>Tornava</marker> ser una carta que venia d'Orient!</example>
                 <example type="triggers_error" reason="ambiguous">T'ajuda ser filòleg quan escrius?</example>
+                <example correction="Venien a"><marker>Venien</marker> veure'ns a casa cada cap de setmana.</example>
                 <example>acostumen a no tenir gaires ancoratges</example>
                 <example>acostumen a venir tard</example>
                 <example>poc acostumada es va allargassar</example>
                 <example>M'ha costat Déu i ajuda pujar l'escala.</example>
                 <example>M'ha ajudat molt haver vist la pel·lícula abans.</example>
+                <example>El noi, que feia d'apuntador, vinga fullejar.</example>
+                <example>Que li vindrà bé passar demà al matí per la notaria?</example>
+                <example>Per tota la plaça del mercat la gent feia i venia menjar.</example>
             </rule>
             <rule>
                 <pattern>
@@ -26313,7 +26330,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
         </rule>
         <rule id="CUINA_A_GAS" name="*cuina a gas/cuina de gas ">
             <pattern>
-                <token regexp="yes" inflected="yes">llanterna|estufa|calefacció|bici|bicicleta|bus|autobús|autocar|jet|avió|barca|jersei|camisa|camiseta|samarreta|brusa|corbata|falda|pantaló|cotxe|cuina|embarcació|fogó|gust|màquina|olor|planxa|pudor|ràdio|vaixell|vehicle|olla|fragata|impressora|motor|caça|combustible|bombarder|caldera|moto|motocicleta|bot|transistor|propulsió</token>
+                <token regexp="yes" inflected="yes">llanterna|estufa|calefacció|bici|bicicleta|bus|autobús|autocar|jet|avió|barca|jersei|camisa|camiseta|samarreta|brusa|corbata|falda|pantaló|cotxe|cuina|embarcació|fogó|gust|màquina|olor|planxa|pudor|ràdio|vaixell|vehicle|olla|fragata|impressora|motor|caça|combustible|bombarder|caldera|moto|motocicleta|bot|transistor|propulsió|dron</token>
                 <marker>
                     <token>a</token>
                 </marker>
@@ -56660,6 +56677,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </antipattern>
             <antipattern>
                 <token regexp="yes">publica|publiques</token>
+                <token postag="_QM_OPEN"/>
+            </antipattern>
+            <antipattern>
+                <token postag="NP.*" postag_regexp="yes"/>
+                <token>publica</token>
+            </antipattern>
+            <antipattern>
+                <token regexp="yes">publica|publiques</token>
                 <token skip="-1" regexp="yes">[,-—–]</token>
                 <token><match no="1"/></token>
                 <token min="0" postag="_QM_OPEN"/>
@@ -71975,6 +72000,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <token>de</token>
                 <token>cas</token>
             </antipattern>
+            <antipattern>
+                <token regexp="yes">entre|en|de|amb|per|sobre|com</token>
+                <token>si</token>
+            </antipattern>
             <rule>
                 <pattern>
                     <token><exception regexp="yes">entre|en|de|amb|per|sobre</exception></token>
@@ -72088,7 +72117,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </rule>
             <rule>
                 <pattern>
-                    <token><exception regexp="yes">entre|en|de|amb|per|sobre</exception></token>
                     <marker>
                         <token>si<exception postag="_GN_MS"/></token>
                     </marker>
@@ -72116,7 +72144,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </rule>
             <rule>
                 <pattern>
-                    <token><exception regexp="yes">entre|en|de|amb|per|sobre</exception></token>
                     <marker>
                         <token>si<exception postag="_GN_MS"/></token>
                     </marker>
@@ -72128,7 +72155,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </rule>
             <rule>
                 <pattern>
-                    <token><exception regexp="yes">entre|en|de|amb|per|sobre</exception></token>
                     <marker>
                         <token>si</token>
                     </marker>
@@ -72751,16 +72777,19 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     </marker>
                     <token regexp="yes">de|d'</token>
                     <token min="0" postag="DA.*" postag_regexp="yes"/>
-                    <token regexp="yes">&mesos_any;|calendari|Maria|any|trimestre|semestre|quadrimestre|abib|edat|adar|sàfar|avantatge|garantia|termini|presó|captiveri|pròrroga|naixement|aniversari|ramadà|subscripció</token>
+                    <token regexp="yes">&mesos_any;|calendari|Maria|any|trimestre|semestre|quadrimestre|abib|edat|adar|sàfar|avantatge|garantia|termini|presó|captiveri|pròrroga|naixement|aniversari|ramadà|subscripció|permís|vacances|vacacions</token>
                 </pattern>
                 <message>No s'accentua si és un nom (període de 28-31 dies).</message>
                 <suggestion>mes</suggestion>
                 <example correction="mes"><marker>més</marker> de novembre.</example>
                 <example correction="mes">Va nàixer el primer <marker>més</marker> de l'any.</example>
                 <example correction="mes">En ple <marker>més</marker> de febrer.</example>
+                <example correction="mes">Així obté un <marker>més</marker> de permís.</example>
                 <example>Es manté en el càrrec més d'un any.</example>
                 <example>un grau més de llibertat</example>
                 <example>Un dia més de novembre.</example>
+                <example>Va tenir tres setmanes més de vacances.</example>
+                <example>Va tenir tres setmanes més de permís.</example>
             </rule>
             <rule>
                 <antipattern>
@@ -84724,7 +84753,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <example>el teòleg O. González de Cardedal escrivia no fa gaire</example>
                 </antipattern>
                 <pattern case_sensitive="yes">
-                    <token regexp="yes">\p{Ll}..+|jo|tu|mi<exception postag="SPS00|LOC_PREP" postag_regexp="yes"/></token>
+                    <token regexp="yes">\p{Ll}..+|jo|tu|mi<exception postag="SPS00|LOC_PREP" postag_regexp="yes"/><exception inflected="yes" regexp="yes">titular|intitular</exception></token>
                     <token regexp="yes">Perquè|No|També|Així|Això|Ja|I|O|Ni|Jo|Tu|Ell|Ella|Nosaltres|Vosaltres|Ells|Elles|Vost[éè]s?|Aquest|Aquesta|Aquests|Aquestes|Però|Un|Una|Uns|Unes<exception case_sensitive="yes" postag="_english_ignore_">I</exception><exception postag_regexp="yes" postag="NP.*"/></token>
                 </pattern>
                 <message>Possible confusió en l'ús de la majúscula, si no és un títol o un nom propi.</message>
@@ -84735,6 +84764,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example correction="jo. Una|jo, una|jo una">Deia que en sabia més que no pas <marker>jo Una</marker> vegada em va telefonar.</example>
                 <example>AIXÒ M'AGRADA MOLT!</example>
                 <example>S'oposà a la regència d'Otó I i fou empresonat.</example>
+                <example>Es titula Ja ve la nit, i és una cançó de bressol.</example>
             </rule>
         </rulegroup>
         <rulegroup id="SEGLE_MINUSCULA" name="segle en minúscula (s.)">
@@ -112649,6 +112679,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <token>de</token>
                 <token>banc</token>
             </antipattern>
+            <antipattern>
+                <token>un</token>
+                <token postag="DN.*" postag_regexp="yes"/>
+                <token>de</token>
+                <token>peu</token>
+                <example>Feia un 40 de peu.</example>
+            </antipattern>
             <pattern>
                 <marker>
                     <token>de</token>
@@ -128238,7 +128275,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                         <token regexp="yes">creua(t|ts|da|des)</token>
                     </marker>
                 </pattern>
-                <message>¿Volíeu dir <suggestion><match no="2" regexp_match="(?iu)creua(.+)" regexp_replace="croa$1" case_conversion="preserve"/></suggestion>?</message>
+                <message>¿Volíeu dir <suggestion><match no="2" regexp_match="(?iu)creua(.+)" regexp_replace="croa$1" case_conversion="preserve"/></suggestion>? "Croada" és una expedició militar a Terra Santa o, més generalment, qualsevol mena de campanya. "Croats" eren els qui hi participaven.</message>
                 <example correction="croats">els <marker>creuats</marker> assetjaren la ciutat</example>
                 <example>els croats assetjaren la ciutat</example>
                 <example>té els cables creuats</example>
@@ -128253,7 +128290,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                         <token regexp="yes">creua(t|ts|da|des)</token>
                     </marker>
                 </pattern>
-                <message>¿Volíeu dir <suggestion><match no="3" regexp_match="(?iu)creua(.+)" regexp_replace="croa$1" case_conversion="preserve"/></suggestion>?</message>
+                <message>¿Volíeu dir <suggestion><match no="3" regexp_match="(?iu)creua(.+)" regexp_replace="croa$1" case_conversion="preserve"/></suggestion>? "Croada" és una expedició militar a Terra Santa o, més generalment, qualsevol mena de campanya. "Croats" eren els qui hi participaven.</message>
                 <example correction="croats">els exèrcits <marker>creuats</marker> assetjaren la ciutat</example>
                 <example>els exèrcits croats assetjaren la ciutat</example>
                 <example>té els cables creuats</example>
@@ -128265,9 +128302,19 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     </marker>
                     <token inflected="yes" regexp="yes">inquisitorial|religiós</token>
                 </pattern>
-                <message>¿Volíeu dir <suggestion><match no="1" regexp_match="(?iu)creua(.+)" regexp_replace="croa$1" case_conversion="preserve"/></suggestion>?</message>
+                <message>¿Volíeu dir <suggestion><match no="1" regexp_match="(?iu)creua(.+)" regexp_replace="croa$1" case_conversion="preserve"/></suggestion>? "Croada" és una expedició militar a Terra Santa o, més generalment, qualsevol mena de campanya. "Croats" eren els qui hi participaven.</message>
                 <example correction="croada">Una <marker>creuada</marker> inquisitorial.</example>
                 <example correction="croades">No és bona idea importar <marker>creuades</marker> religioses.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <marker>
+                        <token regexp="yes">creua(da|des)</token>
+                    </marker>
+                    <token>contra</token>
+                </pattern>
+                <message>¿Volíeu dir <suggestion><match no="1" regexp_match="(?iu)creua(.+)" regexp_replace="croa$1" case_conversion="preserve"/></suggestion>? "Croada" és una expedició militar a Terra Santa o, més generalment, qualsevol mena de campanya. "Croats" eren els qui hi participaven.</message>
+                <example correction="croada">Una <marker>creuada</marker> contra els immigrants.</example>
             </rule>
         </rulegroup>
         <rulegroup id="ORDRE_ORDE" name="ordre/orde">
@@ -144461,7 +144508,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <marker>
                         <token inflected="yes">major</token>
                         <and>
-                            <token inflected="yes" regexp="yes">esdeveniment|organització|empresa|companyia|institució|promesa|accionista|activitat|actor|actriu|afectat|agent|aliat|amenaça|argument|assumpte|atemptat|atractiu|avantatge|batalla|benefici|beneficiari|característica|carnívor|causa|centre|client|col·laborador|competidor|component|conflagració|conseqüència|derrota|desavantatge|dificultat|dirigent|eix|element|enemic|escull|expert|factor|font|fracàs|gesta|guerra|impulsor|inconvenient|infraestructura|interès|limitació|motiu|motor|necessitat|novetat|objectiu|obra|obstacle|origen|parc|preocupació|prioritat|problema|producte|programa|projecte|promotor|propòsit|protagonista|proveïdor|punt|qualitat|qüestió|raó|realització|recurs|referent|repte|responsable|risc|sector|servei|sospitós|tema|usuari|via|victòria|àmbit|èxit|ciutat|carrer|avinguda|estació|port|aeroport|plat|àpat|ingredient|residència|habitatge|soci|mercat|ingrés|despesa|seu|oficina|despatx|indústria|idea|tesi|hipòtesi|teoria|funció|tret|variable|acusat|testimoni|culpable|llei|norma|riu|afluent|serralada|muntanya|espècie<exception postag="PX.*" postag_regexp="yes"/></token>
+                            <token inflected="yes" regexp="yes">esdeveniment|organització|empresa|companyia|institució|promesa|accionista|activitat|actor|actriu|afectat|agent|aliat|amenaça|argument|assumpte|atemptat|atractiu|avantatge|batalla|benefici|beneficiari|característica|carnívor|causa|centre|client|col·laborador|competidor|component|conflagració|conseqüència|derrota|desavantatge|dificultat|dirigent|eix|element|enemic|escull|expert|factor|font|fracàs|gesta|guerra|impulsor|inconvenient|infraestructura|interès|limitació|motiu|motor|necessitat|novetat|objectiu|obra|obstacle|origen|parc|preocupació|prioritat|problema|producte|programa|projecte|promotor|propòsit|protagonista|proveïdor|punt|qualitat|qüestió|raó|realització|recurs|referent|repte|responsable|risc|sector|servei|sospitós|tema|usuari|via|victòria|àmbit|èxit|ciutat|carrer|avinguda|estació|port|aeroport|plat|àpat|ingredient|residència|habitatge|soci|mercat|ingrés|despesa|seu|oficina|despatx|indústria|idea|tesi|hipòtesi|teoria|funció|tret|variable|acusat|testimoni|culpable|llei|norma|riu|afluent|serralada|muntanya|espècie|patrimoni<exception postag="PX.*" postag_regexp="yes"/></token>
                             <token postag="_GN_.*" postag_regexp="yes"/>
                         </and>
                     </marker>
